@@ -122,17 +122,31 @@ const convertCode = async () => {
 		return
 	}
 	let endString = convertStringToArr(input.value)
-	console.log("endString", endString)
+	// console.log("endString", endString)
 	const data = await outputData()
 	// console.log(data)
 	const pyramid = makePyramid(endString)
-	console.log(pyramid)
+	if (pyramid == "Invalid pyramid") {
+		alert("Invalid encripted message.")
+		return
+	}
 	const endPyramid = endOfPyr(pyramid)
 	// console.log("endPyramid", endPyramid)
 	decodedMessage = await decodeDataToText(endPyramid, data).then(
-		(message) => message
+		(message) => {
+			if (message === "invalid number in sequence") {
+				alert("Invalid number in sequence")
+				return
+			} else {
+				return message
+			}
+		}
 	)
-	showEndString()
+	if (decodedMessage === undefined) {
+		return
+	} else {
+		showEndString()
+	}
 	// console.log("decoded", decodedMessage)
 	resetCurrentNum()
 }

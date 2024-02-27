@@ -46,7 +46,14 @@ const makePyramid = (numArr) => {
 		arrLength = sortedArr.length // removes the used values so that the array length matches the desired pyramid length
 		i++
 	}
-	return pyramid
+	// check if the pyramid is valid
+	if (pyramid.length === pyramid[pyramid.length - 1].length) {
+		console.log(pyramid.length, pyramid[pyramid.length - 1].length)
+		return pyramid
+	} else {
+		console.log(pyramid.length, pyramid[pyramid.length - 1].length)
+		return "Invalid pyramid"
+	}
 }
 
 // 3rd issue, we need to pop off the ends of each line and create a new array from it:
@@ -71,8 +78,12 @@ async function decodeDataToText(list, dataSource) {
 		// for each number in the endArr ...
 		const d = list.map((num) => {
 			// 4.3 - find the value that matches the number
-			const value = dataSource.find((d) => d.numericVal == num).value
-			return value
+			try {
+				const value = dataSource.find((d) => d.numericVal == num).value
+				return value
+			} catch (e) {
+				return "invalid number in sequence"
+			}
 		})
 		// add a space to the end of each word to form the sentence, and return the sentence
 		return d.join(" ")
