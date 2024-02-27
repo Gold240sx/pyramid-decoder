@@ -1,0 +1,19 @@
+{
+  "name": "unformattedtextparse",
+  "version": "1.0.0",
+  "description": "github location: https://github.com/Gold240sx/pyramid-decoder hosted:",
+  "main": "src/index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Gold240sx/pyramid-decoder.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Gold240sx/pyramid-decoder/issues"
+  },
+  "homepage": "https://github.com/Gold240sx/pyramid-decoder#readme"
+}

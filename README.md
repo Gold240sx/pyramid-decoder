@@ -1,7 +1,7 @@
 # Readme 📕
 
 github location: https://github.com/Gold240sx/pyramid-decoder
-hosted:
+hosted: https://pyramid-decoder-e7ae0.web.app
 
 Hey, Thanks for your time in overviewing my skill test submission and for the opportunity to challenge myself and work on this project!
 
@@ -23,7 +23,8 @@ I've also hosted this project on GitHub Pages. You can view the project by click
 	const encodedMessage = [3, 6, 2, 4, 1, 5, 47, 29, 73, 49] ).
 ```
 
-I've left my hardcoded array in the compute.js file for your convenience. 😁
+I've left my hardcoded array in the compute.js file for your convenience, fully capable running on its own with minor editing.😁
 
 # pyramid-decoder
+
 # gold240sx.github.io

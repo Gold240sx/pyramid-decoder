@@ -90,7 +90,6 @@ const showEndString = () => {
 	mindblown.style.display = "flex"
 	mindblown.style.justifyitems = "center"
 	mindblown.style.gap = "10px"
-	mindblown.style.backgroundColor = "red"
 	mindblownText.style.marginLeft = "20px"
 	// timer.style.fontSize = "14px"
 	mindblown.id = "mindblown"
