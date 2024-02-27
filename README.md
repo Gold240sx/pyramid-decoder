@@ -1,7 +1,8 @@
 # Readme 📕
 
-github location: https://github.com/Gold240sx/pyramid-decoder
+github location: https://github.com/Gold240sx/pyramid-decoder <br/>
 hosted: https://pyramid-decoder-e7ae0.web.app
+<br/><br/>
 
 Hey, Thanks for your time in overviewing my skill test submission and for the opportunity to challenge myself and work on this project!
 
